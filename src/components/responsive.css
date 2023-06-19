@@ -1,0 +1,90 @@
+@media only screen and (max-width: 768px){
+.hidden-items{
+
+        display: none;
+    }
+.navbar-text-white{
+
+    color: black !important;
+}
+
+.navbar-color{
+    background-color: white;
+}
+.rs-img-hidden{
+
+    display: none;
+}
+.rs-img-block{
+
+display: block !important;
+
+}
+.rs-font-sizes{
+    font-size: 0.7rem !important;
+}
+.navbar-kinds{
+    border:none;
+}
+.navbar-logo-rs{
+    width: 200px;
+    display: block !important;
+}
+.deneme {
+    display: block !important;
+}
+.pill-comp{
+
+border: 1px solid black !important;
+border-radius: 10px !important;
+
+}
+.travel-comp{
+
+    position: unset!important;
+    height: 250px;
+    padding: 25px !important;
+    width: 100%;
+    
+}
+.DateRangePicker_picker{
+    left:-151px !important
+}
+.pill-border{
+    border-right:none !important;
+    border-left: none !important;
+   
+}
+.pill-border-bottom{
+    border-bottom: 1px solid #243545;
+    border-width: 2px !important;
+}
+.search-button{
+
+    height: 100px;
+
+}
+.responsive-padding{
+ padding: 1px !important;
+
+}
+.help-menu{
+    
+   
+     top:  5%;
+     max-height: 610px;
+     width: 80%;
+    
+ }
+
+}
+@media only screen and (max-width:1397px){
+  .border-end{
+        border: 0 !important;
+
+    }
+    .rounded-pill{
+        border-radius: 1rem!important;
+    }
+
+}
