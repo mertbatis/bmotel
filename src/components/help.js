@@ -43,24 +43,24 @@ export default class Helpp extends Component {
      <div class="row">
  
        
-         <div class="col-md-10 mb-md-0 mb-5">
+         <div class="col-xxl-10 mb-md-0 mb-5">
              <form id="contact-form" name="contact-form" action="mailto:support@bmotel.com" method="POST">
  
               <div class="row">
-       <div class="col-md-6">
+       <div class="col-xxl-6">
                          <div class="md-form mb-3">
                              <input type="text" id="name" name="name" class="form-control" placeholder='Adınız'/>
                             
                          </div>
                      </div>
-                  <div class="col-md-6">
+                  <div class="col-xxl-6">
                          <div class="md-form mb-3">
                              <input type="text" id="email" name="email" placeholder='Mail Adresiniz' class="form-control"/>
                          </div>
                      </div>
                  </div>
                <div class="row">
-                     <div class="col-md-12">
+                     <div class="col-xxl-12">
                          <div class="md-form mb-3">
                              <input type="text" id="subject" name="subject" placeholder='Konu' class="form-control"/>
                            
@@ -68,7 +68,7 @@ export default class Helpp extends Component {
                      </div>
                  </div>
                   <div class="row">
-      <div class="col-md-12">
+      <div class="col-xxl-12">
          <div class="md-form mb-3">
      <textarea placeholder='Mesaj' type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
   
@@ -83,7 +83,7 @@ export default class Helpp extends Component {
              <div class="status"></div>
          </div>
       
-         <div class="col-md-2 text-center p-0">
+         <div class="col-xxl-2 text-center p-0">
              <ul class="list-unstyled mb-0">
                  <li><i class="fas fa-map-marker-alt fa-2x "></i><span className=' p-1'>istanbul / Türkiye</span>
                  
@@ -100,7 +100,7 @@ export default class Helpp extends Component {
          </div>
         </div>
  </section>
-   <div className=" col-md-12 ">
+   <div className=" col-xxl-12 ">
          </div>
         </div>
     </div>
