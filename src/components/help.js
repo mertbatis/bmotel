@@ -43,7 +43,7 @@ export default class Helpp extends Component {
      <div class="row">
  
        
-         <div class="col-md-9 mb-md-0 mb-5">
+         <div class="col-md-10 mb-md-0 mb-5">
              <form id="contact-form" name="contact-form" action="mailto:support@bmotel.com" method="POST">
  
               <div class="row">
@@ -83,18 +83,18 @@ export default class Helpp extends Component {
              <div class="status"></div>
          </div>
       
-         <div class="col-md-3 text-center">
+         <div class="col-md-2 text-center p-0">
              <ul class="list-unstyled mb-0">
-                 <li><i class="fas fa-map-marker-alt fa-2x "></i><span className='itms-h p-1'>istanbul / Türkiye</span>
-                     <p className='hidden-items'>istanbul / Türkiye</p>
+                 <li><i class="fas fa-map-marker-alt fa-2x "></i><span className=' p-1'>istanbul / Türkiye</span>
+                 
                  </li>
  
-                 <li><i class="fas fa-phone mt-4 fa-2x "></i><span  className='itms-h p-1'> +90 511 111 11 11</span>
-                     <p className='hidden-items'>+90 511 111 11 11</p>
+                 <li><i class="fas fa-phone mt-4 fa-2x "></i><span  className='p-1'> +90 511 111 11 11</span>
+                    
                  </li>
  
-                 <li><i class="fas fa-envelope mt-4 fa-2x "></i><span  className='itms-h p-1'> contact@bmotel.com</span>
-                     <p className='hidden-items'>contact@bmotel.com</p>
+                 <li><i class="fas fa-envelope mt-4 fa-2x "></i><span  className='p-1'> contact@bmotel.com</span>
+                    
                  </li>
              </ul>
          </div>
