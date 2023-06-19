@@ -157,14 +157,20 @@ position: absolute;
 .visibler{
     visibility: hidden;
 }
-#srch{
-    pointer-events: none;
+.srch-button{
+  
     width: 19%;
     height: 98px;
     float: right;
     color: white;
     font-weight: bold;
   background-color: #351b1d;
+}
+#srch{
+    pointer-events: none;
+}
+#srchh{
+    pointer-events: none;
 }
 .search-menu{
     min-width: 60%;

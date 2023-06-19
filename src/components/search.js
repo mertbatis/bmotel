@@ -31,8 +31,8 @@ this.setState({
         return (
             <div className='h-100 '>
 
-<span type='button' id="srch" className=' text-center  mt-1 rs-img-hidden rounded-pill ' onClick = {this.onClickEvent}><p className='mt-4'>Ara</p></span>
-<div className="col-md-12 p-3 d-none rs-img-block"> <a className="btn btn-danger w-100" onClick = {this.onClickEvent}>Ara</a></div>
+<span type='button' id="srch" className=' text-center  mt-1 rs-img-hidden rounded-pill srch-button ' onClick = {this.onClickEvent}><p className='mt-4'>Ara</p></span>
+<div id="srchh" className="col-md-12 p-3 d-none rs-img-block"> <a className="btn btn-danger w-100" onClick = {this.onClickEvent}>Ara</a></div>
 {
 isVisible ?
 

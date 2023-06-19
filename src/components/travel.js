@@ -28,6 +28,8 @@ export default function Travel() {
       document.getElementById("syc4").style.pointerEvents="none";
       document.getElementById("srch").style.backgroundColor="rgb(0, 101, 20)";
       document.getElementById("srch").style.pointerEvents="all";
+      document.getElementById("srchh").style.pointerEvents="all";
+     
      
     } 
     else if(personid==0 & childid>0){ alert("Lütfen en az 1 yetişkin seçin !");}
@@ -40,6 +42,7 @@ export default function Travel() {
         document.getElementById("oda").style.visibility="visible";
         document.getElementById("srch").style.pointerEvents="none";
         document.getElementById("srch").style.backgroundColor="#351b1d";
+        document.getElementById("srchh").style.pointerEvents="none";
     }
 }
 
