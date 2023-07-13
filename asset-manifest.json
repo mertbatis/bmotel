@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/bmotel/static/css/main.5eee8941.css",
-    "main.js": "/bmotel/static/js/main.1cb0c9bc.js",
+    "main.js": "/bmotel/static/js/main.8e8ed6cf.js",
     "static/js/787.44cdbb95.chunk.js": "/bmotel/static/js/787.44cdbb95.chunk.js",
     "static/media/ornek-foto.jpg": "/bmotel/static/media/ornek-foto.9e782ee8a7552e5a86d6.jpg",
     "static/media/turkey-flag-icon.png": "/bmotel/static/media/turkey-flag-icon.6456288cd718ac640826.png",
     "static/media/logo.svg": "/bmotel/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/bmotel/index.html",
     "main.5eee8941.css.map": "/bmotel/static/css/main.5eee8941.css.map",
-    "main.1cb0c9bc.js.map": "/bmotel/static/js/main.1cb0c9bc.js.map",
+    "main.8e8ed6cf.js.map": "/bmotel/static/js/main.8e8ed6cf.js.map",
     "787.44cdbb95.chunk.js.map": "/bmotel/static/js/787.44cdbb95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5eee8941.css",
-    "static/js/main.1cb0c9bc.js"
+    "static/js/main.8e8ed6cf.js"
   ]
 }
