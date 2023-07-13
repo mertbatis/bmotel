@@ -3,7 +3,6 @@ import React,{useState} from 'react';
 import './App.css';
 import './components/responsive.css';
 import Navbar from './components/navbar';
-import Datepicker from './components/Datepicker';
 import Body from './components/body';
 function App() {
 

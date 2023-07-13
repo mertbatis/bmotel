@@ -47,7 +47,7 @@ border-bottom: 3px solid rgb(194, 9, 34);
 .currency-menu{
     min-width: 300px;
     max-width: 550px;
-    max-height: 380px;
+
     background-color: #111f2d;
     position:absolute;
      border-radius: 10%;
@@ -56,6 +56,10 @@ border-bottom: 3px solid rgb(194, 9, 34);
     bottom:0;
     left: 0;
     right: 0;
+}
+.currency-h{
+
+    max-height: 380px;
 }
 .background-blur{
     background-color: rgba(0,0,0,.59);
@@ -91,8 +95,9 @@ border-bottom: 3px solid rgb(194, 9, 34);
 color: red;
 
 }
-.body-title-color{
+.body-title-text{
     color: #243545 !important;
+    font-size: 15px;
 }
 .pill-comp{
 
@@ -160,7 +165,7 @@ position: absolute;
 .srch-button{
   
     width: 19%;
-    height: 98px;
+    height: 88px;
     float: right;
     color: white;
     font-weight: bold;
@@ -175,8 +180,8 @@ position: absolute;
 .search-menu{
     min-width: 60%;
     max-width: 550px;
-    min-height: 60%;
-    max-height: 380px;
+    min-height: 75%;
+    max-height: 410px;
     background-color: #f8f8f8;
     position:fixed;
      border-radius: 2%;
@@ -201,4 +206,27 @@ position: absolute;
     bottom:0;
     left: 0;
     right: 0;
+}
+.currency-text-c{
+    color: white;
+}
+.currency-text-c:hover{
+    color: red;
+}
+.datepickercustom-go{
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom:0px;
+  }
+.datepickercustom-rtrn{  
+     border-radius: 10px;
+    border-top-left-radius: 0px;
+   border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: 0px;
+ }
+.react-datepicker__input-container input{
+  text-align: center;
+cursor: pointer;
 }

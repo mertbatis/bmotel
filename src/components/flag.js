@@ -1,48 +1,69 @@
-import React, { Component } from 'react'
+import React, { useState,useEffect } from 'react'
 import Currency from './currency'
 import flagimage from '../images/turkey-flag-icon.png'
- class Flag extends Component {
+import axios from 'axios'
 
-    state = { 
-        isVisible  : false
+ export default function Flag() {
+
+
+ const [gorunmez,setGorunmez] = useState(false);
+
+var sycid= 0;
+function swlogo(){
     
-    
+ 
+
+ setGorunmez(current => !current);
+}
+
+   function onClickEvent (){
+
+ setGorunmez(current => !current);
+
     }
 
-    onClickEvent = (e)=>{
+const [ulke , setUlke] = useState();
+    useEffect (() => {
 
-this.setState({
-    isVisible : !this.state.isVisible
-})
+axios.get('https://restcountries.com/v3.1/all')
+ .then (response => setUlke(response.data));
 
-    }
 
-    render() {
-        const {isVisible} = this.state;
+    }, [] )
 
         return (
 
             <div>
-<img className="navbar-icon-size  pb-1 " role="button" src={flagimage} onClick = {this.onClickEvent}></img>
+<img className="navbar-icon-size  pb-1 " role="button" src={flagimage} onClick = {onClickEvent}></img>
 
-                {
-    isVisible ?
+                { gorunmez &&(
 <div className="background-blur">
-   <div className="container p-0 currency-menu text-white">
-   <span className='badge text-bg-danger f-right'>   <i type="button" className="fas fa-times f-right p-1" onClick = {this.onClickEvent}></i> </span> 
-       <div className="container p-4">
+   <div className="container p-0 currency-menu text-white currency-h ">
+   <span className='badge text-bg-danger f-right'>   <i type="button" className="fas fa-times f-right p-1" onClick = {onClickEvent}></i> </span> 
+       <div className="container p-4 h-100 ">
 
-       <div className=" col-md-12 ">Dil Seçin</div>
+    <div className='row h-100  overflow-auto '>
+       
+       {ulke.map(country=>{
+        return (
+
+  <div className='col-3'>
+   <img role="button"  className='p-1'  onClick={swlogo} src={country.flags.png} width={40}/>
+    
+     </div>
+
+        );
+            
+            })}
+       
+       </div>
        </div>
    </div>
    </div>
    
-: null
-} 
+   )
 
+    }
             </div>
         )
     }
-}
-
-export default Flag ;

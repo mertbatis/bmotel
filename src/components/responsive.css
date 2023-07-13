@@ -3,6 +3,10 @@
 
         display: none;
     }
+    .body-title-text{
+        color: #243545 !important;
+        font-size: 12px;
+    }
 .navbar-text-white{
 
     color: black !important;
@@ -56,6 +60,7 @@ border-radius: 10px !important;
    
 }
 .pill-border-bottom{
+    border-top: 1px solid black;
     border-bottom: 1px solid #243545;
     border-width: 2px !important;
 }

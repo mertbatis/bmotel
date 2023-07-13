@@ -5,43 +5,51 @@ import Body from './body'
 import '../App.css';
 import CounterInput from 'react-bootstrap-counter';
 import Travel from './travel.js';
+import { ReactDatePickerProps } from 'react-datepicker';
 
-class Search extends Component {
+
+export default function Search(props) {
       
-    state = { 
-        isVisible  : false,
-    
 
-    }
 
-    onClickEvent = (e)=>{
+    const [hide,setHide] = useState(false);
+    function onClickEvent (){
+
+        setHide(current => !current);
+       
+           }
+
+
+           const city = props.city;
+           const personid = props.personid;
+           const childid = props.childid;
+           const returnDate = props.returnDate;
+           const departureDate = props.departureDate;
+
+
 
         
 
-this.setState({
-    isVisible : !this.state.isVisible
-})
-   }
-  
-
-    render() {
-        const {personid, childid } = this.props;
-        const {isVisible } = this.state;
-    
         return (
             <div className='h-100 '>
 
-<span type='button' id="srch" className=' text-center  mt-1 rs-img-hidden rounded-pill srch-button ' onClick = {this.onClickEvent}><p className='mt-4'>Ara</p></span>
-<div id="srchh" className="col-md-12 p-3 d-none rs-img-block"> <a className="btn btn-danger w-100" onClick = {this.onClickEvent}>Ara</a></div>
+<span type='button' id="srch" className=' text-center  mt-1 rs-img-hidden rounded-pill srch-button ' onClick = {onClickEvent}><p className='mt-4'>Ara</p></span>
+{/*biri mobil için*/}<div id="srchh" className="col-md-12 p-3 d-none rs-img-block"> <a className="btn btn-danger w-100" onClick = {onClickEvent}>Ara</a></div>
 {
-isVisible ?
+hide &&(
 
 <div className="background-blur">
    <div className="container p-0 search-menu text-white ">
-   <span className='badge text-bg-danger f-right'>   <i type="button" className="fas fa-times f-right p-1" onClick = {this.onClickEvent}></i> </span>
+   <span className='badge text-bg-danger f-right'>   <i type="button" className="fas fa-times f-right p-1" onClick = {onClickEvent}></i> </span>
        <div className="container p-4">
  
-       <div className=" col-md-12 text-dark"><span><h5> Aramanız Şu Şekilde : <br/>{} 1 oda {personid} Yetişkin {childid}  Çocuk </h5> </span></div>
+       <div className=" col-md-12 text-dark">
+        <h5><span className='badge bg-danger'>{city} </span>  Bölgesinde<br/>
+        <span className='badge bg-danger'>    {departureDate ? departureDate.toLocaleDateString('tr-TR') : ''} / {returnDate ? returnDate.toLocaleDateString('tr-TR') : ''} </span>Tarihleri Arasında 
+        <br/>
+        <span className='badge bg-danger'>     1 oda {personid} Yetişkin {childid} Çocuk  </span> <br/> İçin En Uygun Oteller :</h5> 
+        
+        </div>
     <div className='col-md-12 text-center'>
 
     <iframe src="https://giphy.com/embed/XGU4CyI27f5xBWGJlY" width="60%" height="354" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
@@ -51,11 +59,8 @@ isVisible ?
    </div>
    </div>
    
-: null
+)
 }               
             </div>
         )
     }
-}
-
-export default Search ;
