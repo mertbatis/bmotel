@@ -7,7 +7,7 @@ import Travel from './travel';
 
 export default function Roundtrip(props) {
   
-   const [city, setCity] = useState(props.city);
+   const city =props.city;
 
 
         return (         

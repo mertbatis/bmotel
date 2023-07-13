@@ -21,7 +21,7 @@ export default function Travel(props) {
     setPersonid(personid=0) ;
     setChildid(childid= 0);
     
-     city ="";
+
      change();
 
 }
@@ -44,6 +44,7 @@ export default function Travel(props) {
      
     } 
     else if(personid==0 & childid>0){ alert("Lütfen en az 1 yetişkin seçin !");}
+
     else if (personid== 0 && childid==0){
 
         for (var i = 0; i < elements.length; i++) {
